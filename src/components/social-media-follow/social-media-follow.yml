@@ -1,0 +1,3 @@
+social-media-follow:
+  tag: social-media-follow
+  template_path: social-media-follow.twig

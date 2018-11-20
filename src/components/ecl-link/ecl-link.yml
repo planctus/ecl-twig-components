@@ -1,0 +1,3 @@
+ecl-link:
+  tag: ecl-link
+  template_path: shout-hello.twig
