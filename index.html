@@ -6,8 +6,14 @@
     <link rel="stylesheet" type="text/css" href="node_modules/@ecl/ec-preset-full/dist/styles/ecl-ec-preset-full.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="node_modules/@ecl/ec-preset-website/dist/styles/ecl-ec-preset-website.css" media="screen" />
     <link rel="stylesheet" href="public/ecl-twig.css" media="screen" />
-    <script src="dist/components.bundled.js" charset="utf-8"></script>
-    <script src="node_modules/@ecl/ec-preset-full/dist/scripts/ecl-ec-preset-full.js" charset="utf-8"></script>
+    <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js"></script>
+    <script src="node_modules/twig/twig.min.js"></script>
+    <script src="dist/ecl-link.js"></script>
+    <script src="dist/ecl-button.js"></script>
+    <script src="dist/ecl-blockquote.js"></script>
+    <script src="dist/ecl-card.js"></script>
+    <script src="dist/ecl-hero-banner.js"></script>
   </head>
   <body>
 
@@ -21,10 +27,9 @@
       <p>ECL link twig component</p>
       
       <div class="component-demo">
-        <ecl-link href=example" label="Standard link" variant="standalone"></ecl-link>
+        <ecl-link href="/example2" label="Standard link"></ecl-link>
       </div>
     </div>
-
     <div class="component">
       <h3>Social-media-follow</h3>
       <p>ECL social media follow twig component</p>
@@ -32,12 +37,43 @@
         <social-media-follow></social-media-follow>
       </div>
     </div>
-
     <div class="component">
       <h3>Social-media-share</h3>
       <p>ECL social media share twig component</p>
       <div class="component-demo">
         <social-media-share></social-media-share>
+      </div>
+    </div>
+    <div class="component">
+      <h3>Buttons</h3>
+      <p>Buttons</p>
+      <div class="component-demo">
+        <ecl-button label="Primary button" button_type="primary"></ecl-button><br />
+        <ecl-button label="Secondary button" button_type="secondary"></ecl-button><br />
+        <ecl-button label="Ghost button" button_type="ghost"></ecl-button><br />
+        <ecl-button label="Call to action button" button_type="call"></ecl-button><br />
+        <ecl-button label="Search button" button_type="search"></ecl-button><br />
+      </div>
+    </div>
+    <div class="component">
+      <h3>Blockquote</h3>
+      <p>Blockquote</p>
+      <div class="component-demo">
+        <ecl-blockquote></ecl-blockquote>
+      </div>
+    </div>
+    <div class="component">
+      <h3>Cards</h3>
+      <p>Cards</p>
+      <div class="component-demo">
+        <ecl-card></ecl-card>
+      </div>
+    </div>
+    <div class="component">
+      <h3>Hero Banner</h3>
+      <p>Hero Banner</p>
+      <div class="component-demo">
+        <ecl-hero-banner></ecl-hero-banner>
       </div>
     </div>
     <!--generator-placeholder-->
